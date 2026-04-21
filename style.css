@@ -1,0 +1,294 @@
+
+
+#navbar
+{
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-image: url(back.jpeg);
+background-size: cover;
+}
+#list
+{
+list-style: none;
+margin: 0;
+padding: 0;
+ display: flex;
+ gap: 20px;
+
+}
+a
+{
+color: rgb(255, 0, 0);
+text-decoration: none;
+font-size: x-large;
+}
+.logo
+{
+font-weight: bold;
+font-style: italic;
+font-family: Arial, Helvetica, sans-serif;
+}
+.logo:hover
+{
+transition: 1s;
+transform: scale(1.5);
+transition-timing-function: ease-in-out;
+transition-delay: 0.5s;
+}
+
+#list li:hover
+{
+transition: 1s;
+background-color: rgb(64, 18, 190);
+color: silver;
+transform: scaleX(1.5);
+}
+#products {
+  border: solid rgb(255, 255, 255);
+  margin: 15px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  width: min(100%, 1200px);
+  padding: 16px;
+  box-sizing: border-box;
+  animation-duration: 3s;
+  animation-name: slide-in;
+  background-color: blueviolet;
+}
+
+#products > div {
+  flex: 1 1 240px;
+  max-width: 280px;
+  min-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+#products > div p {
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#cat1,
+#cat2,
+#cat3,
+#cat4 {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(150vw) scaleX(2);
+  }
+  to {
+    transform: translateX(0) scaleX(1);
+  }
+}
+
+@media (max-width: 760px) {
+  #products {
+    gap: 16px;
+  }
+  #products > div {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  #navbar {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 8px;
+  }
+  #list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #products {
+    padding: 8px;
+  }
+  button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+#cat1{
+background-image: url(one.jpg);
+}
+#cat2{
+background-image: url(two.jpg);
+}
+#cat3{
+background-image: url(three.jpg);
+}
+#cat4{
+background-image: url(ahmad.jpeg);
+}
+
+#p1{
+
+    font-size: large;
+}
+
+
+#p2{
+
+    font-size: large;
+}
+
+
+
+#p3{
+
+    font-size: large;
+}
+
+#p4{
+
+    font-size: large;
+}
+
+
+
+button{
+    background-color: slateblue;
+    color: white;
+}
+
+@media (max-width: 760px) {
+  #products > div {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+#head{
+   
+    text-align: start;
+    font-size: x-large;
+    color: rgb(255, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(backcat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position: center;
+    width: 100%;
+    min-height: 100px;
+    padding: 70px 20px;
+  }
+  #welcome{
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-align: center;
+   color: chartreuse;
+   text-transform: uppercase;
+   text-size-adjust: 20px;
+  }
+  #info{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: space-evenly;
+    height: 400px;
+    
+  }
+  #first{
+    border: solid rgb(255, 255, 255);
+    background-color: darkseagreen;
+    border-radius: 15%;
+  }
+  #second{
+    border: solid rgb(255, 255, 255);
+    background-color: darkseagreen;
+    border-radius: 15%;
+  }
+  #third{
+    border: solid rgb(255, 255, 255);
+    background-color: darkseagreen;
+    border-radius: 15%;
+  }
+  #fourth
+  {
+    border: solid rgb(255, 255, 255);
+    background-color: darkseagreen;
+    border-radius: 15%;
+  }
+  #first p, #second p, #third p, #fourth p
+  {
+    font-size: large;
+    padding: 20px;
+  }
+  ol
+  {
+
+    
+    font-size: x-large;
+    font-weight: bold;
+  }
+  #center
+  {
+    text-align: center;
+  }
+  #heading1, #heading2, #heading3, #heading4
+  {
+   font-size: xx-large;
+    color: rgb(255, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #about
+  {
+    background-image: url(catback.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position: center;
+    width: 100%;
+    min-height: 200px;
+    padding: 70px 20px;
+  }
+  #ddd
+  {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-align: center;
+    color: chartreuse;
+    text-transform: uppercase;
+    text-size-adjust: 20px;
+  }
+  #p10
+  {
+    font-size: large;
+    text-align: center;
+    color: rgb(61, 18, 180);
+  }
+  @media (max-width: 760px) {
+  #info > div {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 760px) {
+  #about > div {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
